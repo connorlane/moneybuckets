@@ -1,0 +1,20 @@
+{
+"manifest_version": 2,
+    "name": "moneybuckets",
+    "description": "Converts from nerd money to money buckets. Money buckets are $680 USD for you nerds out there.",
+    "version": "1.0",
+    "browser_action": {
+	    "default_icon": "icon.png"
+  	},
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
